@@ -79,16 +79,33 @@ h3 {
     filter: none;
 }
     /* everything above is the main structure of the website */
-    /* inspiratie */
-
-#inspiratie .content-box{
-    display: flex;
+ 
+    /*nav*/
+nav {
+    position:fixed;
+    right: 0;
+    top: 0;
+    width: 5%;
+    height: 5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
 }
 
+    /*call to action*/
+button .mail {
+    background-color: #FDA5A4;
+}
 
+    /* inspiratie */
+
+    #inspiratie .content-box{
+    display: flex;
+}
 
 #inspiratie .content-box img {
     width: 40%;
     object-fit: contain;
     margin-right: 10%;
 }
+
+
