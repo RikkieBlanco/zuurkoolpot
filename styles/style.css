@@ -1,0 +1,94 @@
+* { 
+	box-sizing: border-box;
+}
+html, body {
+	min-height: 100%;
+	background-color: #F5F5F5;
+	color: #2B394A;
+    font-size: 16px;
+}
+	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
+	
+body {
+	text-rendering: optimizeLegibility;
+}
+	/* sets the base font size for the document; turns on kerning pairs and ligatures */
+	
+body, ul, ol, dl {
+	margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Martel', serif;
+}
+
+#hero {
+    width: 50%;
+    height: 100%;
+    background: #C5D0DD;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+#hero img {
+    height: 100%;
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    object-fit: contain;
+}
+
+main {
+    margin-left: 50%;
+}
+
+.content-page {
+    margin: 15%;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #FDA5A4;
+}
+
+.content-box{
+    background-color: #2B394A;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    margin: 4rem 0px;
+    border: 1px solid #2B394A;
+    padding: 1rem;
+    color: white;
+}
+
+.content-box:hover{
+    filter: none;
+}
+    /* everything above is the main structure of the website */
+    /* inspiratie */
+
+#inspiratie .content-box{
+    display: flex;
+}
+
+
+
+#inspiratie .content-box img {
+    width: 40%;
+    object-fit: contain;
+    margin-right: 10%;
+}
