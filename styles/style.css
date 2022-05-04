@@ -63,25 +63,36 @@ h2 {
 h3 {
     font-size: 2rem;
     margin-top: 0;
-    color: #FDA5A4;
 }
 
-.content-box{
-    background-color: #2B394A;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+.popper {
+    background: #2B394A;
+	font-weight: 700;
+	padding: 0;
+	border-radius: 5px;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    width: 90%;
+}
+
+.popper .content-box{
+    background-color: #C5D0DD;
     margin: 4rem 0px;
-    border: 1px solid #2B394A;
+    border: 1px solid #C5D0DD;
     padding: 1rem;
-    color: white;
+    transform: translate3d(-4px, -4px, 0);
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+    border: 1px solid #2B394A;
+	border-radius: 5px;
 }
 
-.content-box:hover{
-    filter: none;
+.popper .content-box:hover{
+    transform: translate3d(-8px, -8px, 0);
 }
     /* everything above is the main structure of the website */
  
     /*nav*/
-nav {
+nav div {
     position:fixed;
     right: 0;
     top: 0;
@@ -91,7 +102,40 @@ nav {
     margin-top: 2.5%;
 }
 
-    /*call to action*/
+.dropdown {
+    position: fixed;
+    left: -100%;
+    background-color: #FDA5A4;
+    opacity: 0.95;
+    height: 80%;
+    width: 100%;
+    z-index: 5;
+    transition: 0.3s
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.dropdown li{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 2rem;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: #2B394A
+}
+
+.dropdown.active {
+    left: 0;
+}
+
+    /*call to action*/  
 button .mail {
     background-color: #FDA5A4;
 }
@@ -105,7 +149,7 @@ button .mail {
 #inspiratie .content-box img {
     width: 40%;
     object-fit: contain;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 /* mail mij button */
