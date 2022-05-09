@@ -15,6 +15,25 @@
 </head>
 
 <body>
+    <div class="modal" id="email-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="form-wrapper">
+                <form action="/" method="get" class="modal-form" id="form">
+                    <p>Wil je op de hoogte blijven? Laat dan hier je email-adres achter!</p>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="name" name="name" placeholder="Hoe heet je?">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="email" class="modal-input" id="email" name="email" placeholder="Vul hier je email in">
+                        <p>Error Message</p>
+                    </div>
+                    <input type="submit" class="modal-input-btn" value="Je mag mij mailen!">
+                </form>
+            </div>
+        </div>
+    </div>
     <div id="hero">
         <img src="assets/crock zonder background.png" alt="zuurkoolpot of fermentatie crock met waterrand-deksel">
     </div>
@@ -41,31 +60,14 @@
                     </li>
                 </ul>
             </nav>
+        
             <section id="mail-me">
                 <h1>Zuurkoolpot</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In doloremque, odio ab fugit ut tempora
                     corrupti et itaque voluptate quo recusandae saepe molestias ea quasi voluptatum, eligendi harum
                     sequi? Veritatis?</p>
                 <button class="lijst button--pandora"><span>Houd mij op de hoogte!</span></button>
-                <div class="modal" id="email-modal">
-                    <div class="modal-content">
-                        <span class="close-btn">&times;</span>
-                        <div class="form-wrapper">
-                            <form action="/" method="get" class="modal-form" id="form">
-                                <p>Wil je op de hoogte blijven? Laat dan hier je email-adres achter!</p>
-                                <div class="form-validation">
-                                    <input type="text" class="modal-input" id="name" name="name" placeholder="Hoe heet je?">
-                                    <p>Error Message</p>
-                                </div>
-                                <div class="form-validation">
-                                    <input type="email" class="modal-input" id="email" name="email" placeholder="Vul hier je email in">
-                                    <p>Error Message</p>
-                                </div>
-                                <input type="submit" class="modal-input-btn" value="Je mag mij mailen!">
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                
             </section>
             <section id="inspiratie">
                 <h2>Inspiratie</h2>
