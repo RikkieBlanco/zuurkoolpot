@@ -28,13 +28,13 @@
                 </div>
                 <ul class="dropdown">
                     <li class="menu-item">
-                        <a href="#">Home</a>
+                        <a id="mail-me">Home</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Inspiratie</a>
+                        <a id="inspiratie">Inspiratie</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Recepten</a>
+                        <a href="#recepten">Recepten</a>
                     </li>
                     <li class="menu-item">
                         <a href="#">Over ons</a>
@@ -46,7 +46,26 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In doloremque, odio ab fugit ut tempora
                     corrupti et itaque voluptate quo recusandae saepe molestias ea quasi voluptatum, eligendi harum
                     sequi? Veritatis?</p>
-                    <button class="button button--pandora"><span>Houd mij op de hoogte!</span></button>
+                <button class="lijst button--pandora"><span>Houd mij op de hoogte!</span></button>
+                <div class="modal" id="email-modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+                        <div class="form-wrapper">
+                            <form action="/" method="get" class="modal-form" id="form">
+                                <p>Wil je op de hoogte blijven? Laat dan hier je email-adres achter!</p>
+                                <div class="form-validation">
+                                    <input type="text" class="modal-input" id="name" name="name" placeholder="Hoe heet je?">
+                                    <p>Error Message</p>
+                                </div>
+                                <div class="form-validation">
+                                    <input type="email" class="modal-input" id="email" name="email" placeholder="Vul hier je email in">
+                                    <p>Error Message</p>
+                                </div>
+                                <input type="submit" class="modal-input-btn" value="Je mag mij mailen!">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="inspiratie">
                 <h2>Inspiratie</h2>
