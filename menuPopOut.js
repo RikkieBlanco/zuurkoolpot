@@ -11,6 +11,7 @@ hamburger.addEventListener("click", () => {
 const modal = document.getElementById('email-modal');
 const openBtn = document.querySelector('.lijst-btn');
 const closeBtn = document.querySelector('.close-btn');
+const overlay = document.getElementById('backgroundOverlay');
 
 // click events
 
@@ -23,7 +24,13 @@ closeBtn.addEventListener('click', () => {
 })
 
 window.addEventListener('click', (e) => {
-    if(e.target === modal) {
+    if(e.target === overlay) {
         modal.style.display = 'none';
     }
 })
+
+// form validation
+
+const form = document.getElementById('form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
